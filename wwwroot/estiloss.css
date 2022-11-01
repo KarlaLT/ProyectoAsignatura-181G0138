@@ -85,6 +85,39 @@ footer div {
     width: 100%;
 }
 
+.options {
+    display: none;
+    position: absolute;
+    right: 25px;
+    top:40px;
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--primary-color);
+    list-style: none;
+    padding: 10px;
+    line-height: 40px;
+}
+
+    .options li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .options a {
+        margin: 0;
+        padding: 10px 20px;
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+    }
+
+        .options a:hover {
+            border-radius: 5px;
+            background-color: #3CB371;
+            cursor: pointer;
+        }
+
+
+
 /*INICIO*/
 .bodyInicio {
     padding: 0;
@@ -106,7 +139,7 @@ footer div {
     .bodyInicio img{
         height:40px;
         align-self:center;
-        margin:0 20px;
+        margin: 20px;
         cursor:pointer;
     }
     .bodyInicio main {
@@ -151,7 +184,7 @@ footer div {
                 border-top-right-radius: 100px;
             }
 
-        .navMessages div select {
+        .navMessages div select{
             width: 10vw;
             margin-left: 10px;
             margin-top: 10px;
@@ -182,7 +215,109 @@ footer div {
         font-size: .8em;
     }
 
+    /*ADMINISTRATIVE*/
+.btn-flotante {
+    font-size: 2.8em; /* Cambiar el tamaño de la tipografia */
+    font-weight: bold; /* Fuente en negrita o bold */
+    color: #ffffff; /* Color del texto */
+    border-radius: 100%; /* Borde del boton */
+    letter-spacing: 2px; /* Espacio entre letras */
+    background-color: var(--primary-color); /* Color de fondo */
+    /*padding: 18px 30px;*/ /* Relleno del boton */
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
 
+    .btn-flotante:hover {
+        background-color: #3CB371; /* Color de fondo al pasar el cursor */
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+        transform: translateY(-7px);
+    }
+
+/*    MODAL AGREGAR
+*/
+
+.modal {
+    background: rgba(0, 0, 0, 0.8);
+    color: #48785E;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: all .5s;
+    z-index: 100;
+}
+.modal form {
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    font-size: 1.5em;
+    background-color:white;
+    padding:0 30px;
+   display:flex;
+   flex-direction:column;
+   border-radius:15px;
+}
+.modal form label, .modal form p{
+    font-size:.8em;
+    font-weight:600;
+}
+.modal form h4{
+    text-align:center;
+    margin:10px
+}
+    .modal form select {
+        width: 10vw;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 1px solid;
+        border-color: gray;
+        outline: 0;
+        box-shadow: none;
+        text-align: center;
+    }
+
+    .modal form textarea{
+        margin:10px 0;
+        height:30%;
+        resize:none;
+        padding:10px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .modal form div:last-child{
+        align-self:end;
+    }
+
+    .modal form a, .modal form input[type="submit"]{
+        text-decoration:none;
+        background-color:var(--primary-color);
+        color:white;
+        padding:5px 25px;
+        font-size:.7em;
+        border:none;
+        cursor:pointer;
+        align-self:baseline;
+        border-radius:3px;
+    }
+    .modal form input[type="submit"]{
+        border:1px solid var(--primary-color);
+    }
 
 /*RESPONSIVE*/
 @media screen and (max-width: 560px) and (max-height:940px) {
@@ -206,26 +341,54 @@ footer div {
         height: 8%;
         padding-top: 0px;
     }
-    .bodyInicio header h1{
-        margin-top:0;
-    }
-    .bodyInicio header img{
-        height:30px;
-    }
+
+        .bodyInicio header h1 {
+            margin-top: 0;
+        }
+
+        .bodyInicio header img {
+            height: 30px;
+        }
+
     .navMessages div a {
         width: 20vw;
     }
+
     .navMessages div:last-child {
-        margin-left:10px;
+        margin-left: 10px;
     }
-    .navMessages div:last-child select{
-        width:30vw;
-    }
+
+        .navMessages div:last-child select {
+            width: 30vw;
+        }
+
     .navMessages div a:first-child {
         margin-left: 0;
     }
 
-    .messages div{
-        margin:0 30px 10px 30px;
+    .messages div {
+        margin: 0 30px 10px 30px;
     }
+
+    .modal form {
+        width: 60%;
+        height: 40%;
+    }
+
+        .modal form h4 {
+            font-size: .8em;
+        }
+
+        .modal form label, .modal form select {
+            font-size: .6em;
+        }
+
+        .modal form select {
+            width: 50%;
+        }
+
+        .modal form a, .modal form input[type="submit"] {
+            padding:3px 20px;
+            font-size:.6em;
+        }
 }

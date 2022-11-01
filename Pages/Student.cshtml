@@ -14,7 +14,14 @@
 <body class="bodyInicio">
     <header>
         <h1>¡Bienvenido (a), Karla!</h1>
-        <img src="~/img/Imagen1.png" />
+        <div>
+             <img src="~/img/Imagen1.png" />
+         <nav>
+            <ul class="options">
+                <li><a href="#">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+        </div>
     </header>
 
     <main>
@@ -92,6 +99,51 @@
         </section>
 
     </main>
+
+      <div class="modal">
+
+            <form>
+                <h4>Detalles del mensaje</h4>
+
+               <div>
+                    <label>Para:</label>
+                    <label>9.2G</label>
+            </div>
+
+            <label>Mensaje:</label>
+
+ <p>Por motivo de graduación, jueves 28 de octubre se suspenden clases en general...</p>
+            <div>
+                    <a href="#" >X Cerrar</a>
+                </div>
+
+
+
+        </form>
+
+    </div>
+
+
+      <script>
+    var modal = document.querySelector(".modal");
+    var options = document.querySelector("header div img");
+    var menu = document.querySelector(".options");
+    var message = document.querySelector(".messages div");
+
+    options.addEventListener("click", function(){
+        if(menu.style.display!="block"){
+                    menu.style.display="block";
+        }
+                else{
+                    menu.style.display="none";
+        }
+    });
+
+    message.addEventListener("click", function(){
+        modal.style.top=0;
+    });
+
+    </script>
 
 
 </body>
