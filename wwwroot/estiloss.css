@@ -276,9 +276,12 @@ footer div {
     font-size:.8em;
     font-weight:600;
 }
+    .modal form p {
+        font-weight:normal;
+    }
 .modal form h4{
     text-align:center;
-    margin:10px
+    margin:30px 10px;
 }
     .modal form select {
         width: 10vw;
