@@ -1,5 +1,5 @@
 ﻿@page
-@model ProyectoAsignatura181G0138.Pages.AdministrativeModel
+@model ProyectoAsignatura181G0138.Pages.ReceiveModel
 @{
 }
 
@@ -18,7 +18,7 @@
 
         <div>
              <img src="~/img/Imagen1.png" />
-         <nav>
+          <nav>
             <ul class="options">
                                 <li><a href="/Administrative">Recibidos</a></li>
                 <li><a href="/Sent">Enviados</a></li>
@@ -31,76 +31,91 @@
 
     <main>
         <div class="navMessages">
-            <p>Revisa tus nuevos mensajes</p>
-
-            <div>
-                <a href="#">Hoy</a>
-                <a href="#">Ayer</a>
-                <a href="#">Todos</a>
-            </div>
-
-
-            <div>
-                <p>Grupo:</p>
-                <select>
-                    <option>9.1G</option>
-                    <option>7.2G</option>
-                </select>
-            </div>
+            <p>Revisa los mensajes que has enviado</p>
         </div>
 
 
         <section class="messages">
             <div>
-                <label>De: Dirección académica</label>
+
+                <div>
+
+                                    <label>Para: Dirección académica</label>
+
+                    <div class="crud">
+             <img src="~/img/editar.png" />
+             <img src="~/img/basura.png" />
+                    </div>
+                </div>
+
                 <p>Mensaje: Por motivo de graduación, jueves 28 de octubre se suspenden clases en general...</p>
                 <label>28/10/2022 12:55pm</label>
             </div>
-            <div>
-                <label>De: Dirección académica</label>
+
+              <div>
+
+                <div>
+
+                                    <label>Para: Dirección académica</label>
+
+                    <div class="crud">
+             <img src="~/img/editar.png" />
+             <img src="~/img/basura.png" />
+                    </div>
+                </div>
+
                 <p>Mensaje: Por motivo de graduación, jueves 28 de octubre se suspenden clases en general...</p>
                 <label>28/10/2022 12:55pm</label>
             </div>
-            <div>
-                <label>De: Dirección académica</label>
+
+              <div>
+
+                <div>
+
+                                    <label>Para: Dirección académica</label>
+
+                    <div class="crud">
+             <img src="~/img/editar.png" />
+             <img src="~/img/basura.png" />
+                    </div>
+                </div>
+
                 <p>Mensaje: Por motivo de graduación, jueves 28 de octubre se suspenden clases en general...</p>
                 <label>28/10/2022 12:55pm</label>
             </div>
-            <div>
-                <label>De: Dirección académica</label>
+
+              <div>
+
+                <div>
+
+                                    <label>Para: Dirección académica</label>
+
+                    <div class="crud">
+             <img src="~/img/editar.png" />
+             <img src="~/img/basura.png" />
+                    </div>
+                </div>
+
                 <p>Mensaje: Por motivo de graduación, jueves 28 de octubre se suspenden clases en general...</p>
                 <label>28/10/2022 12:55pm</label>
             </div>
-            <div>
-                <label>De: Dirección académica</label>
+
+              <div>
+
+                <div>
+
+                                    <label>Para: Dirección académica</label>
+
+                    <div class="crud">
+             <img src="~/img/editar.png" />
+             <img src="~/img/basura.png" />
+                    </div>
+                </div>
+
                 <p>Mensaje: Por motivo de graduación, jueves 28 de octubre se suspenden clases en general...</p>
                 <label>28/10/2022 12:55pm</label>
             </div>
-            <div>
-                <label>De: Dirección académica</label>
-                <p>Mensaje: Por motivo de graduación, jueves 28 de octubre se suspenden clases en general...</p>
-                <label>28/10/2022 12:55pm</label>
-            </div>
-            <div>
-                <label>De: Dirección académica</label>
-                <p>Mensaje: Por motivo de graduación, jueves 28 de octubre se suspenden clases en general...</p>
-                <label>28/10/2022 12:55pm</label>
-            </div>
-            <div>
-                <label>De: Dirección académica</label>
-                <p>Mensaje: Por motivo de graduación, jueves 28 de octubre se suspenden clases en general...</p>
-                <label>28/10/2022 12:55pm</label>
-            </div>
-            <div>
-                <label>De: Dirección académica</label>
-                <p>Mensaje: Por motivo de graduación, jueves 28 de octubre se suspenden clases en general...</p>
-                <label>28/10/2022 12:55pm</label>
-        </div>
-            <div>
-                <label>De: Dirección académica</label>
-                <p>Mensaje: Por motivo de graduación, jueves 28 de octubre se suspenden clases en general...</p>
-                <label>28/10/2022 12:55pm</label>
-    </div>
+           
         </section>
 
         <a href="#" class="btn-flotante">+</a>
@@ -127,7 +142,7 @@
 
             <div>
                  <input type="submit" value="Enviar" />
-                    <a href="/Administrative" >X Cerrar</a>
+                    <a href="/Sent" >X Cerrar</a>
                 </div>
 
 
@@ -150,7 +165,7 @@
 
  <p>Por motivo de graduación, jueves 28 de octubre se suspenden clases en general...</p>
             <div>
-                    <a href="/Administrative" >X Cerrar</a>
+                    <a href="/Sent" >X Cerrar</a>
                 </div>
 
 
